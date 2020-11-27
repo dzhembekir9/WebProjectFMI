@@ -78,6 +78,10 @@ header ul li {
     color: white;
 }
 
+header .drop-menu {
+    display: none;
+}
+
 
 header ul li a {
     text-decoration: none;
@@ -353,7 +357,6 @@ iframe {
         justify-content: center;
         flex-wrap: wrap;
     }
-
 }
 
 @media screen and (max-width: 1156px) {
@@ -382,6 +385,38 @@ iframe {
     .burger {
         display: flex;
         color: white;
+    }
+    .footer-box ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-hall div {
+        margin: 20px 8%;
+    }
+    .main-hall div img {
+        width: 100%;
+    }
+    .main-hall div p {
+        margin: 0px;
+    }
+    header .dropdown {
+        display: flex;
+        justify-content: center;
+        background-color: whitesmoke;
+    }
+    header .dropdown a{
+        color: #872642;
+    }
+    header .dropdown ul .hall a{
+        padding: 0;
+        margin: auto;
+        opacity: 1;
+        -webkit-text-stroke: 0px black;
+        background-color: whitesmoke;
+    }
+    header .dropdown a:hover {
+        color: #872642;
+        opacity: 1;
     }
 }
 
