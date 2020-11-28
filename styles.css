@@ -119,6 +119,8 @@ nav div h1 {
     margin-top: 8%;
     font-size: 80px;
     -webkit-text-stroke: 0.01em black;
+    animation-name: go-up;
+    animation-duration: 1s;
 }
 
 .main-wrapper a  {
@@ -128,6 +130,8 @@ nav div h1 {
     margin: 15% auto 15% auto;
     font-size: 22px;
     transition: color 0.7s;
+    animation-name: go-up;
+    animation-duration: 1.7s;
 }
 
 .main-wrapper a:hover {
@@ -151,7 +155,6 @@ nav div h1 {
 
 .gallery div img {
     width:  300px;
-    height: 90%;
     object-fit: cover;
     flex: 1;
     transition: 1s;
@@ -163,7 +166,6 @@ nav div h1 {
     transform: scale(1.2);
     transition: 0.7s;
 }
-
 
 
 /* footer */
@@ -304,7 +306,7 @@ iframe {
 }
 
 
-/* excercises */
+/* hall of fame */
 
 
 .main-hall {
@@ -386,6 +388,9 @@ iframe {
         display: flex;
         color: white;
     }
+    .burger:hover {
+        cursor: pointer;
+    }
     .footer-box ul {
         flex-direction: column;
         text-align: center;
@@ -403,7 +408,12 @@ iframe {
         display: flex;
         justify-content: center;
         background-color: whitesmoke;
+        animation-name: dropdown;
+        animation-delay: 0s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
     }
+
     header .dropdown a{
         color: #872642;
     }
@@ -413,10 +423,13 @@ iframe {
         opacity: 1;
         -webkit-text-stroke: 0px black;
         background-color: whitesmoke;
+        transition: 0s;
     }
     header .dropdown a:hover {
-        color: #872642;
+        color: gray;
         opacity: 1;
+        font-size: 23px;
+        transition: 0s;
     }
 }
 
@@ -437,5 +450,17 @@ iframe {
     .ex-main div iframe {
         width: 80%;
     }
+}
+
+@keyframes dropdown {
+    from {transform: translateY(-30px);}
+    to {transform: translateY(0px);}
+    0%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+
+@keyframes go-up {
+    from {transform: translateY(200px);}
+    to {transform: translateY(0px);}
 }
 
