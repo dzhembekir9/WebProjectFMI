@@ -8,6 +8,8 @@ html {
     font-family: 'Roboto',sans-serif;
 }
 
+/* header */
+
 .logo {
     padding-left: 20px;
 }
@@ -44,9 +46,6 @@ header div ul a:hover {
 li {
     list-style-type: none
 }
-
-/* header */
-
 
 header div {
     display: flex;
@@ -105,7 +104,7 @@ header div ul .hall a {
     opacity: 1;
 }
 
-/* main */
+/* home */
 
 .main-wrapper {
     display: flex;
@@ -168,84 +167,8 @@ nav div h1 {
 }
 
 
-/* footer */
-
-
-.footer-wrapper {
-    display: flex;
-    border: 1px solid gainsboro;
-    background-color: gainsboro;
-    color: #4C4556;
-    font-size: 20px;
-    padding: 20px;
-    flex-direction: column;
-}
-
-.footer-box ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-footer ul li {
-    padding: 20px;
-}
-
-.icons {
-    display: flex;
-    justify-content: center;
-    flex: 2;
-}
-
-.icons a {
-    padding: 10px;
-    text-decoration: none;
-    color: inherit;
-}
-
-.icons a:hover {
-    transition: 0.5s;
-}
-
-.facebook:hover {
-    color: #4267B2;
-}
-
-.instagram:hover {
-    color: #E1306C;
-}
-
-.twitter:hover {
-    color: #1DA1F2;
-}
-
-.github:hover {
-    color: #211F1F;
-}
-
-.copy {
-    display: flex;
-    color: white;
-    background-color: #872642;
-    justify-content: center;
-    padding: 15px;
-}
-
-.bottom {
-    display: flex;
-    flex: 1;
-}
-
-.top {
-    transition: 0.5s;
-}
-
-.top:hover {
-    opacity: 0.5;
-    transition: 0.5s;
-}
-
 /* excercises */
+
 
 .header{
     background-image: url(/images/main-image.jpg);
@@ -354,6 +277,85 @@ iframe {
     font-size: 18px;
 }
 
+
+/* footer */
+
+
+.footer-wrapper {
+    display: flex;
+    background-color: gainsboro;
+    color: #4C4556;
+    font-size: 20px;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.footer-box ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer ul li {
+    padding: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+.icons a {
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.icons a:hover {
+    transition: 0.5s;
+}
+
+.facebook:hover {
+    color: #4267B2;
+}
+
+.instagram:hover {
+    color: #E1306C;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+.github:hover {
+    color: #211F1F;
+}
+
+.copy {
+    display: flex;
+    color: white;
+    background-color: #872642;
+    justify-content: center;
+    padding: 15px;
+}
+
+.bottom {
+    display: flex;
+    flex: 1;
+}
+
+.top {
+    transition: 0.5s;
+}
+
+.top:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
+
 @media screen and (max-width: 1916px) {
     .gallery {
         justify-content: center;
@@ -361,7 +363,7 @@ iframe {
     }
 }
 
-@media screen and (max-width: 1156px) {
+@media screen and (max-width: 1200px) {
     .gallery div img {
         width:  400px;
     }
@@ -380,7 +382,7 @@ iframe {
     }
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 992px) {
     .wrapper ul {
         display: none;
     }
@@ -433,24 +435,25 @@ iframe {
     }
 }
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 900px) {
+    .ex-main div iframe {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .gallery div img {
         width:  400px;
     }
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 576px) {
     .gallery div img {
         width:  350px;
         margin: auto 0px;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .ex-main div iframe {
-        width: 80%;
-    }
-}
 
 @keyframes dropdown {
     from {transform: translateY(-30px);}
